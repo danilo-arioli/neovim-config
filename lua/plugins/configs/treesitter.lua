@@ -1,12 +1,17 @@
-local options = {
-  ensure_installed = { "lua" },
+return {
+  'nvim-treesitter/nvim-treesitter',
+  opts = {
+    ensure_installed = { "php", "javascript", "typescript", "dockerfile", "markdown", "tsx", "astro", "scss",
+      "css", "lua" },
 
-  highlight = {
-    enable = true,
-    use_languagetree = true,
+    highlight = {
+      enable = true,
+      use_languagetree = true,
+    },
+
+    indent = { enable = true },
   },
-
-  indent = { enable = true },
+  config = function(_, opts)
+    require("nvim-treesitter.configs").setup(opts)
+  end,
 }
-
-return options

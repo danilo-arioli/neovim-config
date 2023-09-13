@@ -10,4 +10,5 @@ if not vim.loop.fs_stat(lazypath) then
   })
 end
 vim.opt.rtp:prepend(lazypath)
-require('plugins.plugins')
+
+require("lazy").setup({{import = "plugins.configs"}, {import = "plugins.configs.lsp"}})

@@ -1,2 +1,2 @@
 require 'core.options'
-require 'plugins.lazy_init'
+require 'plugins.lazy'
