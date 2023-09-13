@@ -40,7 +40,7 @@ return {
           ['<C-d>'] = cmp.mapping.scroll_docs(4),
           ['<C-f>'] = cmp_action.luasnip_jump_forward(),
           ['<C-b>'] = cmp_action.luasnip_jump_backward(),
-          ['<Tab>'] = cmp.mapping.confirm({ select = true }),
+          ['<Enter>'] = cmp.mapping.confirm({ select = true }),
         })
       })
     end
@@ -87,12 +87,12 @@ return {
       lsp_zero.setup()
 
       require('mason-lspconfig').setup({
-        ensure_installed = { "lua_ls", "intelephense" },
+        ensure_installed = { "lua_ls", "intelephense", "tsserver", "tailwindcss" },
         handlers = {
           lsp_zero.default_setup,
           -- Lua configuration
-          ls_lua = function()
-            return require("plugins.configs.lsp.configs.luals")
+          lua_ls = function()
+            return require("plugins.configs.lsp.configs.lua_ls")
           end,
           -- PHP configuration
           intelephense = function()
