@@ -21,6 +21,14 @@ return {
 				default = "*",
 				highlight = "NeoTreeFileIcon",
 			},
+			modified = {
+				symbol = "[+]",
+				highlight = "NeoTreeModified",
+			},
+			name = {
+				use_git_status_colors = true,
+				highlight = "NeoTreeFileName",
+			},
 			git_status = {
 				symbols = {
 					-- Change type
