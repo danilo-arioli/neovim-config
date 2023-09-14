@@ -18,11 +18,11 @@ return {
 					require("formatter.filetypes.typescriptreact").prettierd,
 				},
 				javascript = {
-					require("formatter.filetypes.javascript").prettierd,
+					require("formatter.filetypes.javascript").prettier,
 				},
-        css = {
-          require("formatter.filetypes.css").prettierd
-        }
+				css = {
+					require("formatter.filetypes.css").prettierd,
+				},
 			},
 		}
 	end,
