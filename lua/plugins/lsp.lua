@@ -92,23 +92,23 @@ return {
 					lsp_zero.default_setup,
 					-- Lua configuration
 					lua_ls = function()
-						return require("plugins.configs.lsp.configs.lua_ls")
+						return require("plugins.lsp_configs.lua_ls")
 					end,
 					-- PHP configuration
 					intelephense = function()
-						return require("plugins.configs.lsp.configs.intelephense")
+						return require("plugins.lsp_configs.intelephense")
 					end,
 
 					tsserver = function()
-						return require("plugins.configs.lsp.configs.tsserver")
+						return require("plugins.lsp_configs.tsserver")
 					end,
 
 					emmet_ls = function()
-						return require("plugins.configs.lsp.configs.emmet-ls")
+						return require("plugins.lsp_configs.emmet-ls")
 					end,
 
 					tailwindcss = function()
-						return require("plugins.configs.lsp.configs.tailwind")
+						return require("plugins.lsp_configs.tailwind")
 					end,
 				},
 			})
