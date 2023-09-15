@@ -1,7 +1,7 @@
 
 # Neovim configuration for PHP, Wordpress and React 
 
-<img width="1910" alt="Capture" src="https://github.com/danilo-arioli/neovim-config/assets/130993253/a59394c6-86ce-4b88-932b-ed447946a1ec">
+<img width="1908" alt="Capture" src="https://github.com/danilo-arioli/neovim-config/assets/130993253/36181924-1efd-4959-9b42-bac51b956725">
 
  
 ## What is included
