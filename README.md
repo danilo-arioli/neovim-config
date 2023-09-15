@@ -1,5 +1,8 @@
 
 # Neovim configuration for Wordpress and React 
+
+<img width="1910" alt="Capture" src="https://github.com/danilo-arioli/neovim-config/assets/130993253/a59394c6-86ce-4b88-932b-ed447946a1ec">
+
  
 ## What is included
 * Lazy loading for a better and faster development experience
