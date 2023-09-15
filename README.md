@@ -1,5 +1,5 @@
 
-# Neovim Lua configuration | optimized for Wordpress and React development
+# Neovim configuration for Wordpress and React 
  ## What is included
 * Lazy loading for a better and faster development experience
 * Diagnostics for typescript, javascript, php, tsx, jsx, docker, astro, html and css
@@ -32,14 +32,12 @@ If you are on mac:
 
 ```
 git clone https://github.com/danilo-arioli/neovim-config ~/.config/nvim 
-
 ```
 
 If you are on windows:
 
 ```
 git clone https://github.com/danilo-arioli/neovim-config %LOCALAPPDATA%\nvim
-
 ```
 ## How to use
 All the most important keybindings are listed in the initial Neovim screen, just CD into a folder and type:
@@ -47,7 +45,6 @@ All the most important keybindings are listed in the initial Neovim screen, just
 
 ```
 nvim
-
 ```
 All of the other keybidings can be found in "core.keymaps" or in
 the [plugins](#plugins) documentations
