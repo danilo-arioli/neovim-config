@@ -43,7 +43,7 @@ return {
 					{
 						"󰈙 Show Definitions | Declarations | Type Definitions",
 						"",
-						"leader +si | +sdd | +d | +td",
+						"+sdd | +d | +td",
 					},
 					{
 						" Show Implementations | What's Under The Cursor",
@@ -89,7 +89,7 @@ return {
 				background = "#1f2227",
 				folded_section = "#56b6c2",
 			},
-			parts = { "header", "footer",  "body" },
+			parts = { "header", "footer", "body" },
 		})
 	end,
 }
