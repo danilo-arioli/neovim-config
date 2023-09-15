@@ -51,7 +51,7 @@ return {
 						"leader+si | ?",
 					},
 					{ "󰷈 Code actions | References | Smart Rename", "", "leader+ca | +sr | +rn" },
-					{ "  Surround Word With Quotes Or Whatelse", "", "ysiw + ' | ( | [ | {" },
+					{ "  Surround Word With Quotes Or Whatelse", "", "ysiw+' | +( | +[ | +{" },
 					{ "󰆾  Move Lines While Visually Selected", "", "K | J" },
 				},
 				highlight = "bool",
