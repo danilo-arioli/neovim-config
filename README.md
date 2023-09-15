@@ -1,10 +1,13 @@
 
 # Neovim configuration for Wordpress and React 
- ## What is included
+
+ <img width="1538" alt="Capture" src="https://github.com/danilo-arioli/neovim-config/assets/130993253/b77711b3-880e-4af8-ae4b-159988b34215">
+ 
+## What is included
 * Lazy loading for a better and faster development experience
 * Diagnostics for typescript, javascript, php, tsx, jsx, docker, astro, html and css
 * Autocompletion for all of the above + wordpress snippets
-* Smart renaming for the lsp that supports it 
+* Smart renaming for the lsp that support it 
 * A fuzzy finder and a file tree
 * Useful keymap bindings
 * Autoclosing tags, quotes, brackets and whatever else 
