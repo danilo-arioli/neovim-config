@@ -10,7 +10,7 @@
 * Autocompletion for all of the above + wordpress snippets
 * Smart renaming for the lsp that support it 
 * A fuzzy finder and a file tree
-* Useful keymap bindings
+* Useful key bindings
 * Autoclosing tags, quotes, brackets and whatever else 
 * A nice looking ui
 
@@ -44,7 +44,7 @@ If you are on windows:
 git clone https://github.com/danilo-arioli/neovim-config %LOCALAPPDATA%\nvim
 ```
 ## How to use
-All the most important keybindings are listed in the initial Neovim screen, just CD into a folder and type:
+All the most important key bindings are listed in the initial Neovim screen, just CD into a folder and type:
 
 
 ```
