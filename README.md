@@ -3,7 +3,8 @@
 
 <img width="1908" alt="Capture" src="https://github.com/danilo-arioli/neovim-config/assets/130993253/36181924-1efd-4959-9b42-bac51b956725">
 
-##Prerequisites
+
+## Prerequisites
 * Node and NPM installed
 * Ripgrep installed
  
