@@ -45,6 +45,10 @@ If you are on windows:
 ```
 git clone https://github.com/danilo-arioli/neovim-config %LOCALAPPDATA%\nvim
 ```
+after install you may need to install the formatters:
+```
+:MasonInstall stylua php-cs-fixer prettierd prettier
+```
 ## How to use
 Keeping in mind that the leader key is "space", all the most important key bindings are listed in the initial Neovim screen, just CD into a folder and type:
 
