@@ -5,6 +5,7 @@
 ## Prerequisites
 * Node and NPM installed
 * Ripgrep installed
+* A [Nerd Font](https://www.nerdfonts.com/font-downloads) installed
  
 ## What is included
 * Lazy loading for a better and faster development experience
