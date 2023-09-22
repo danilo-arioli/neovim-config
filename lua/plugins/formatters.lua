@@ -4,8 +4,6 @@ return {
 		return {
 			filetype = {
 				lua = {
-					-- "formatter.filetypes.lua" defines default configurations for the
-					-- "lua" filetype
 					require("formatter.filetypes.lua").stylua,
 				},
 				php = {
@@ -27,6 +25,8 @@ return {
 		}
 	end,
 	config = function(_, opts)
+		-- Define an autocmd for BufWritePost event to format PHP files
+		vim.cmd("autocmd BufWritePost *.php lua vim.lsp.buf.format()")
 		-- Create an autocmd group called "FormatAutogroup"
 		vim.cmd("augroup FormatAutogroup")
 		-- Clear any existing autocmds in the group
