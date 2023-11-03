@@ -41,3 +41,6 @@ vim.api.nvim_set_keymap("n", "<Tab>", ":tabnext<CR>", { noremap = true, silent =
 -- Go to the previous tab
 vim.api.nvim_set_keymap("n", "<S-Tab>", ":tabprevious<CR>", { noremap = true, silent = true })
 
+-- Remap the esc key
+vim.api.nvim_set_keymap("i", "nn", "<Esc>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("x", "nn", "<Esc>", { noremap = true, silent = true })
