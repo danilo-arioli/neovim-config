@@ -1,40 +1,40 @@
 return {
-	"mhartington/formatter.nvim",
-	opts = function()
-		return {
-			filetype = {
-				lua = {
-					require("formatter.filetypes.lua").stylua,
-				},
-				php = {
-					require("formatter.filetypes.php").php_cs_fixer,
-				},
-				typescript = {
-					require("formatter.filetypes.typescript").prettierd,
-				},
-				typescriptreact = {
-					require("formatter.filetypes.typescriptreact").prettierd,
-				},
-				javascript = {
-					require("formatter.filetypes.javascript").prettier,
-				},
-				css = {
-					require("formatter.filetypes.css").prettierd,
-				},
+	"stevearc/conform.nvim",
+	lazy = true,
+	event = { "BufReadPre", "BufNewFile" }, -- to disable, comment this out
+	config = function()
+		local conform = require("conform")
+
+		conform.setup({
+			formatters_by_ft = {
+				javascript = { "prettierd" },
+				typescript = { "prettierd" },
+				javascriptreact = { "prettierd" },
+				typescriptreact = { "prettierd" },
+				svelte = { "prettierd" },
+				css = { "prettierd" },
+				html = { "prettierd" },
+				json = { "prettierd" },
+				yaml = { "prettierd" },
+				markdown = { "prettierd" },
+				graphql = { "prettierd" },
+				lua = { "stylua" },
+				python = { "isort", "black" },
+				php = { "phpinsights" },
 			},
-		}
-	end,
-	config = function(_, opts)
-		-- Define an autocmd for BufWritePost event to format PHP files
-		vim.cmd("autocmd BufWritePost *.php lua vim.lsp.buf.format()")
-		-- Create an autocmd group called "FormatAutogroup"
-		vim.cmd("augroup FormatAutogroup")
-		-- Clear any existing autocmds in the group
-		vim.cmd("autocmd!")
-		-- Define the autocmd for BufWritePost event
-		vim.cmd("autocmd BufWritePost * FormatWrite")
-		-- End the autocmd group
-		vim.cmd("augroup END")
-		require("formatter").setup(opts)
+			format_on_save = {
+				lsp_fallback = true,
+				async = false,
+				timeout_ms = 1000,
+			},
+		})
+
+		vim.keymap.set({ "n", "v" }, "<leader>mp", function()
+			conform.format({
+				lsp_fallback = true,
+				async = false,
+				timeout_ms = 1000,
+			})
+		end, { desc = "Format file or range (in visual mode)" })
 	end,
 }
